@@ -91,7 +91,7 @@ def ussdapp(request):
             response +="2. checking registe\n"
             response +="3. Leave"
         elif text == '1*1':
-            response ="CON Enter Your Fullname \n"
+            response ="CON Enter Your Fullname"+str(len(level))+"\n"
         elif text =='1*1' and int(len(level))== 1 and str(level[0]) in str(level):
             response ="CON Enter Your phone "
         elif text =='1*1' and int(len(level))== 2 and str(level[1]) in str(level):
