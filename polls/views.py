@@ -90,7 +90,6 @@ def ussdapp(request):
             response +="1. Join the program \n"
             response +="2. checking registe\n"
             response +="3. Leave"
-           #=========== Girls in =============
         elif text == '1*1':
             response ="CON Enter Your Fullname \n"
         elif text =='1*1' and int(len(level))== 2 and str(level[1]) in str(level):
