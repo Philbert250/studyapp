@@ -13,4 +13,4 @@ urlpatterns =[
     path('student', views.student, name='student'),
     path('ussd/', views.ussdapp, name='ussd'),
     path('idaussd', views.idaussd, name='idauss')
-]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
