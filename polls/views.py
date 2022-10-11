@@ -101,7 +101,7 @@ def ussdapp(request):
             phone= str(level[3])
             lastname = str(level[4])
             reg = Registration(phone=phone,firstname=fullname,lastname=lastname)
-            save()
+            reg.save()
             response = "END Thank you for registering"
         else:
             response ="no choice "
