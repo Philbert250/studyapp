@@ -92,14 +92,14 @@ def ussdapp(request):
             response +="3. Leave"
         elif text == '1*1':
             response ="CON Enter Your Fullname"+str(len(level))+"\n"
-        elif text =='1*1' and int(len(level))== 1 and str(level[0]) in str(level):
-            response ="CON Enter Your phone "
-        elif text =='1*1' and int(len(level))== 2 and str(level[1]) in str(level):
-            response ="CON Enter Your lastname "
         elif text =='1*1' and int(len(level))== 3 and str(level[2]) in str(level):
-            fullname= str(level[0])
-            phone= str(level[1])
-            lastname = str(level[2])
+            response ="CON Enter Your phone "
+        elif text =='1*1' and int(len(level))== 4 and str(level[3]) in str(level):
+            response ="CON Enter Your lastname "
+        elif text =='1*1' and int(len(level))== 5 and str(level[4]) in str(level):
+            fullname= str(level[2])
+            phone= str(level[3])
+            lastname = str(level[4])
             reg = Registration(phone=phone,firstname=fullname,lastname=lastname)
             save()
             response = "END Thank you for registering"
